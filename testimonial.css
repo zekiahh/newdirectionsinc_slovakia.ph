@@ -1,0 +1,166 @@
+/* Style the container with a rounded border, grey background and some padding and margin */
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+  }
+  
+  /* Clear floats after containers */
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+  .container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  /* Increase the font-size of a span element */
+  .container span {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  
+  /* Add media queries for responsiveness. This will center both the text and the image inside the container */
+  @media (max-width: 500px) {
+    .container {
+      text-align: center;
+    }
+  
+    .container img {
+      margin: auto;
+      float: none;
+      display: block;
+    }
+  }
+
+ /*sitemap*/
+.sitemap *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container2{
+    max-width: 1170px;
+    height: 270px;
+    background-color: #40813D;
+    margin: auto;
+}
+
+.row2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sitemap ul{
+    list-style: none;
+}
+
+.sitemap{
+    background-color: #40813D;
+    box-sizing: 70px 0;
+}
+
+.sitemap-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.sitemap-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 400;
+    position: relative;
+}
+
+.sitemap-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(158, 0, 0);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.sitemap-col ul li a:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.sitemap-col ul li a{
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 200;
+    color: #ffffff;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.sitemap-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.sitemap-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.sitemap-col ul li{
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 200;
+    color: #ffffff;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+
+.sitemap-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.sitemap-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+@media(max-width: 767px){
+    .sitemap-col{
+        width: 25%;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px){
+    .sitemap-col{
+        width: 100%;
+    }
+    .container2{
+        height:100%;
+    }
+}

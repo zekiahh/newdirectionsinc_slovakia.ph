@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Team</title>
+    <link rel="icon" href="img/logo4.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!--top button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    
+    <section class="sub-header-meet">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" >HOME</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">SERVICES</i></a>
+                        <div class="dropdown-content">
+                            <a href="services.html">Services</a>
+                            <a href="metro-rail.html">Portfolio</a>
+                            <a href="comments.html">Reviews</a>
+                        </div>
+                    </li>                    
+                    <li><a href="contactinfo.html">CONTACTS</a></li>
+                    <li><a href="meet.html" class="active">THE TEAM</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>MEET THE TEAM</h1>
+	</section>
+    <section>
+	<div class="slideshow-container">
+	
+	<div class="mySlides fade">
+	<section class="about">
+        <div class="row">
+            <div class="about-col">
+                <h1>WHO WE ARE</h1>
+                <p style="font-size:25px">ADDESIGNERS,INC. IS A SEC-REGISTERED FULL-SERVICE ADVERTISING AND PROMOTIONS AGENCY.</p>
+            </div>
+            <div class="about-col">
+                <img src="img/team1st.png">
+            </div>
+        </div>
+    </section>
+	</div>
+	
+	<div class="mySlides fade">
+	<section class="about">
+        <div class="row">
+            <div class="about-col">
+                <h1>WE ARE</h1>
+                <p style="font-size:25px">ADDESIGNERS IS STAFFED BY 25 PROFFESIONALS, IN WHICH ARE HIGHLY EXPERIENCED IN ACCOUNT MANAGMENT, MEDIA PLANNING AND PRODUCTION.</p>
+            </div>
+            <div class="about-col">
+                <img src="img/team2nd.png">
+            </div>
+        </div>
+    </section>
+	</div>
+	
+	<div class="mySlides fade">
+	<section class="about">
+        <div class="row">
+            <div class="about-col">
+                <h1>WHAT WE DO</h1>
+                <p style="font-size:25px">THE AGENCY IS COMMITTED TO INTELLIGENT, PRO-ACTIVE AND PROMPT SERVICING, AND THE PURSUIT AND APPLICATION OF OUT-OF-THE BOX CREATIVE APPROACHES AIMED AT REALIZING CLIENTS' MARKETING OBJECTIVES</p>
+            </div>
+            <div class="about-col">
+                <img src="img/team3rd.png">
+            </div>
+        </div>
+    </section>
+	</div>
+	<a class="prev" onclick="plusSlides(-1)">❮</a>
+	<a class="next" onclick="plusSlides(1)">❯</a>
+</section>
+    <section>
+      <!--sitemap-->
+      <footer class="sitemap">
+        <div class="container2">
+            <div class="row2">
+                <div class="sitemap-col">
+                    <br/>
+                    <br/>
+                    <h4>New Directions, Inc.</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="metro-rail.html">Portfolio</a></li>
+                    </ul>
+                    <br/><br/><br/>
+                </div>
+                <div class="sitemap-col">
+                    <br/>
+                    <br/>
+                    <h4>Sitemap</h4>
+                    <ul>
+                        <li><a href="comments.html">Review</a></li>
+                        <li><a href="contactinfo.html">Contacts</a></li>
+                        <li><a href="meet.html">The Team</a></li>
+                    </ul>
+                </div>
+                <div class="sitemap-col">
+                    <br/>
+                    <br/>
+                    <h4>Slovakia</h4>
+                    <ul>
+                        <li>Harun, Trisha</li>
+                        <li>Lumabi, Edelle</li>
+                        <li>Pasamonte, Myrr</li>
+                        <li>Villosa, Emmanuel</li>
+                        <li>Violenta, Erielson</li>
+                    </ul>
+                </div>
+                <div class="sitemap-col">
+                    <br/>
+                    <br/>
+                    <h4>Contact us</h4>
+                    <ul>
+                        <li>new_d_inc@yahoo.com</li>
+                        <li>(02) 851 6471 or (02) 853 0962</li>
+                    </ul>
+                </div>
+                
+                <br/>
+            </div>
+        </div>
+        <!--footer-->
+    <section class="footer">
+        <h4></h4>
+        <p>You may also contact us via our Social Media platforms!</p>
+        <div class="icons">
+            <img src="img/handshake.png" alt="handshake.png" class="icon-image">
+            <a href="https://www.facebook.com/new.d.inc/" target="_blank" onclick="changeColor(this)"><i class="fa fa-facebook" id="facebook-icon"></i></a>
+            <a href="https://www.linkedin.com/company/newdinc/" target="_blank" onclick="changeColor(this)"><i class="fa fa-linkedin" id="linkedin-icon"></i></a>
+            <img src="img/handshake.png" alt="handshake.png" class="icon-image">
+        </div>
+    </section>        
+    
+    <script>
+        function changeColor(element) {
+        element.classList.toggle("clicked");
+        }
+  
+    </script>
+      <!--footer end-->
+    </footer>
+    <!--sitemap end-->
+</section>
+    <!--js for toggle menu-->
+    <script>
+        var navLinks = document.getElementById("nav-links");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+		
+		
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+    <!--js for toggle menu end-->
+</body>
+</html>

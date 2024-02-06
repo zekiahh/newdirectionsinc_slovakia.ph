@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Client Comments</title>
+        <link rel="icon" href="img/logo4.png">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="testimonial.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!--top button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="img/logo.png"></a>
+                <div class="nav-links" id="nav-links">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn active">SERVICES</a>
+                            <div class="dropdown-content">
+                                <a href="services.html">Services</a>
+                                <a href="metro-rail.html">Portfolio</a>
+                                <a href="comments.html" class="active">Reviews</a>
+                            </div>
+                        </li>                    
+                        <li><a href="contactinfo.html">CONTACTS</a></li>
+                        <li><a href="meet.html">THE TEAM</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            
+        <!--MOMENT ELMAO-->
+
+        <!--js for toggle menu-->
+    <script>
+        var navLinks = document.getElementById("nav-links");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <!--js for toggle menu end-->
+            
+        </body>
+
+        <body>
+            <section class="testimonials">
+                <h1>What Customers Say</h1>
+                <p class="notTestimonial">See the feedback of past clients and their rating for our exceptional service</p>
+                <!-- Alvaro -->
+                <div class="testimonial-row">
+                    <div class="testimonial-col">
+                        <img src="img/comments/alvaro.jpg" alt="Alvaro">
+                        <div>
+                            <p>New Directions Inc. has been a game-changer for Mall of Asia's marketing materials. 
+                                Their creative team delivered stunning designs that perfectly align with our brand image. The quality and 
+                                timeliness of their services have exceeded our expectations. Highly recommended!</p>
+                            <h3>Jose Luis Alvaro</h3>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                    </div>
+                    <!-- del Rosario -->
+                    <div class="testimonial-col">
+                        <img src="img/comments/delRosario.jpg" alt="delRosario">
+                        <div>
+                            <p>Working with New Directions Inc. was a delightful experience for Greenbelt 5. 
+                                They possess a keen understanding of our brand identity, and their marketing materials have significantly boosted our promotional efforts. 
+                                The team is not just professional but also innovative – a winning combination</p>
+                            <h3>Anna Isabel Del Rosario</h3>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                    </div>
+
+                    <!-- lim -->
+                    <div class="testimonial-col">
+                        <img src="img/comments/lim.jpg" alt="lim">
+                        <div>
+                            <p>New Directions Inc. has truly transformed our promotional game at Toy Kingdom. 
+                                The marketing materials they provided were not only visually appealing but also perfectly captured the essence of our brand. 
+                                The creativity and professionalism demonstrated by their team have made them our preferred choice for all future campaigns. 
+                                Exceptional service!</p>
+                            <h3>Luzviminda Lim</h3>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                    </div>
+                    <!-- reyes -->
+                    <div class="testimonial-col">
+                        <img src="img/comments/reyes.jpg" alt="reyes">
+                        <div>
+                            <p>S&R is delighted with the marketing material services from New Directions Inc. 
+                                Their ability to understand our unique brand positioning and translate it into captivating designs is commendable. 
+                                The team's dedication to delivering top-notch quality within tight deadlines is truly impressive. 
+                                Highly recommended for anyone seeking a reliable and creative marketing partner!</p>
+                            <h3>Ramon Miguel Reyes</h3>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                    </div>
+                    <!-- rivera -->
+                    <div class="testimonial-col">
+                        <img src="img/comments/rivera.jpg" alt="rivera">
+                        <div>
+                            <p>Ayala Malls is thoroughly impressed with New Directions Inc. 
+                                Their commitment to excellence shines through in every marketing material they produce. 
+                                The attention to detail and quick turnaround time make them our go-to partner for all promotional campaigns. 
+                                Truly a reliable and creative ally!</p>
+                            <h3>Gabriel Mateo Rivera</h3>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <!-- villanueva -->
+                    <div class="testimonial-col">
+                        <img src="img/comments/villanueva.jpg" alt="villanueva">
+                        <div>
+                            <p>New Directions Inc. has proven to be an invaluable partner for SM Department Store. 
+                                Their exceptional marketing material services have played a pivotal role in enhancing our brand visibility and customer engagement. 
+                                The team exhibited a profound understanding of our vision, delivering designs that not only met but exceeded our expectations. 
+                                Their professionalism, creativity, and prompt execution make them a standout choice. We highly recommend New Directions Inc. to any business looking to elevate its marketing game. 
+                                A seamless and delightful experience from start to finish!</p>
+                            <h3>Andres Villanueva</h3>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="center, foot">
+                    <div class="comments">
+                        <h1>Do you want to say something about us? Leave a comment below</h1>
+                        <form id="dataForm">
+                            <p>Name</p>
+                            <input type="Text" name="name" required/>
+                            <p>Comment</p>
+                            <textarea name="commentBox" id="commentbox" cols="30" rows="10"></textarea>
+                            <input type="submit" value="Submit Comment"/>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <!--sitemap-->
+                <footer class="sitemap">
+                  <div class="container2">
+                      <div class="row2">
+                          <div class="sitemap-col">
+                              <br/>
+                              <br/>
+                              <h4>New Directions, Inc.</h4>
+                              <ul>
+                                  <li><a href="index.html">Home</a></li>
+                                  <li><a href="services.html">Services</a></li>
+                                  <li><a href="metro-rail.html">Portfolio</a></li>
+                              </ul>
+                              <br/><br/><br/>
+                          </div>
+                          <div class="sitemap-col">
+                              <br/>
+                              <br/>
+                              <h4>Sitemap</h4>
+                              <ul>
+                                  <li><a href="comments.html">Review</a></li>
+                                  <li><a href="contactinfo.html">Contacts</a></li>
+                                  <li><a href="meet.html">The Team</a></li>
+                              </ul>
+                          </div>
+                          <div class="sitemap-col">
+                              <br/>
+                              <br/>
+                              <h4>Slovakia</h4>
+                              <ul>
+                                  <li>Harun, Trisha</li>
+                                  <li>Lumabi, Edelle</li>
+                                  <li>Pasamonte, Myrr</li>
+                                  <li>Villosa, Emmanuel</li>
+                                  <li>Violenta, Erielson</li>
+                              </ul>
+                          </div>
+                          <div class="sitemap-col">
+                              <br/>
+                              <br/>
+                              <h4>Contact us</h4>
+                              <ul>
+                                  <li>new_d_inc@yahoo.com</li>
+                                  <li>(02) 851 6471 or (02) 853 0962</li>
+                              </ul>
+                          </div>
+                          
+                          <br/>
+                      </div>
+                  </div>
+                  <!--footer-->
+              <section class="footer">
+                  <h4></h4>
+                  <p>You may also contact us via our Social Media platforms!</p>
+                  <div class="icons">
+                      <img src="img/handshake.png" alt="handshake.png" class="icon-image">
+                      <a href="https://www.facebook.com/new.d.inc/" target="_blank" onclick="changeColor(this)"><i class="fa fa-facebook" id="facebook-icon"></i></a>
+                      <a href="https://www.linkedin.com/company/newdinc/" target="_blank" onclick="changeColor(this)"><i class="fa fa-linkedin" id="linkedin-icon"></i></a>
+                      <img src="img/handshake.png" alt="handshake.png" class="icon-image">
+                  </div>
+              </section>        
+              
+              <script>
+                  function changeColor(element) {
+                  element.classList.toggle("clicked");
+                  }
+            
+              </script>
+                <!--footer end-->
+              </footer>
+              <!--sitemap end-->
+          </section>
+        </body>
+</html>

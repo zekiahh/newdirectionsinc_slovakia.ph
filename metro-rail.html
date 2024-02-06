@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Portfolio</title>
+    <link rel="icon" href="img/logo4.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--top button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    
+    <section class="portfolio-header">
+      <nav>
+        <a href="index.html"><img src="img/logo-white.png"></a>
+        <div class="nav-links" id="nav-links">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn active">SERVICES</a>
+                    <div class="dropdown-content">
+                        <a href="services.html">Services</a>
+                        <a href="metro-rail.html" class="active">Portfolio</a>
+                        <a href="comments.html">Reviews</a>
+                    </div>
+                </li>                    
+                <li><a href="contactinfo.html">CONTACTS</a></li>
+                <li><a href="meet.html">THE TEAM</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+        <h1>PORTFOLIO</h1>
+    </section>
+
+    <!--portfolio navbar-->
+    <section class="portfolio-nav">
+      <h1>OUR CLIENTS</h1>
+      <nav>
+        <div class="port-nav-links" id="port-nav-links">
+            <ul>
+                <li><a href="metro-rail.html" class="active">METRO DEPT STORE</a></li>                  
+                <li><a href="sm-app.html">SM APPLIANCES</a></li>
+                <li><a href="sm-dept.html">SM DEPARTMENT STORE</a></li>
+                <li><a href="snr.html">S&R</a></li>
+                <li><a href="toyking.html">TOY KINGDOM</a></li>
+            </ul>
+        </div>
+    </nav>
+    </section>
+    <!--portfolio navbar end-->
+
+    <!--image gallery-->
+    <div class="container">
+        <h1>METRO DEPT STORE IMAGE GALLERY</h1>
+        <div class="image-container">
+            <div class="image"><img src="img/metro/1.jpg" alt=""></div>
+            <div class="image"><img src="img/metro/2.jpg" alt=""></div>
+            <div class="image"><img src="img/metro/3.jpg" alt=""></div>
+            <div class="image"><img src="img/metro/4.jpg" alt=""></div>
+            <div class="image"><img src="img/metro/5.jpg" alt=""></div>
+            <div class="image"><img src="img/metro/6.jpg" alt=""></div>
+        </div>
+
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="img/metro/1.jpg" alt="">
+
+        </div>
+
+    </div>
+    <!--script for image gal-->
+    <script>
+    document.querySelectorAll('.image-container img').forEach(image=>{
+        image.onclick = () =>{
+            document.querySelector('.popup-image').style.display ='block';
+            document.querySelector('.popup-image img').src=image.getAttribute('src');
+        }
+    });
+    document.querySelector('.popup-image span').onclick = () => {
+        document.querySelector('.popup-image').style.display ='none';
+    }
+    </script>
+    <!--script for image gal END-->
+
+    <!--image gallery end-->
+
+    <section>
+        <!--sitemap-->
+        <footer class="sitemap">
+          <div class="container2">
+              <div class="row2">
+                  <div class="sitemap-col">
+                      <br/>
+                      <br/>
+                      <h4>New Directions, Inc.</h4>
+                      <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="services.html">Services</a></li>
+                          <li><a href="metro-rail.html">Portfolio</a></li>
+                      </ul>
+                      <br/><br/><br/>
+                  </div>
+                  <div class="sitemap-col">
+                      <br/>
+                      <br/>
+                      <h4>Sitemap</h4>
+                      <ul>
+                          <li><a href="comments.html">Review</a></li>
+                          <li><a href="contactinfo.html">Contacts</a></li>
+                          <li><a href="meet.html">The Team</a></li>
+                      </ul>
+                  </div>
+                  <div class="sitemap-col">
+                      <br/>
+                      <br/>
+                      <h4>Slovakia</h4>
+                      <ul>
+                          <li>Harun, Trisha</li>
+                          <li>Lumabi, Edelle</li>
+                          <li>Pasamonte, Myrr</li>
+                          <li>Villosa, Emmanuel</li>
+                          <li>Violenta, Erielson</li>
+                      </ul>
+                  </div>
+                  <div class="sitemap-col">
+                      <br/>
+                      <br/>
+                      <h4>Contact us</h4>
+                      <ul>
+                          <li>new_d_inc@yahoo.com</li>
+                          <li>(02) 851 6471 or (02) 853 0962</li>
+                      </ul>
+                  </div>
+                  
+                  <br/>
+              </div>
+          </div>
+          <!--footer-->
+      <section class="footer">
+          <h4></h4>
+          <p>You may also contact us via our Social Media platforms!</p>
+          <div class="icons">
+              <img src="img/handshake.png" alt="handshake.png" class="icon-image">
+              <a href="https://www.facebook.com/new.d.inc/" target="_blank" onclick="changeColor(this)"><i class="fa fa-facebook" id="facebook-icon"></i></a>
+              <a href="https://www.linkedin.com/company/newdinc/" target="_blank" onclick="changeColor(this)"><i class="fa fa-linkedin" id="linkedin-icon"></i></a>
+              <img src="img/handshake.png" alt="handshake.png" class="icon-image">
+          </div>
+      </section>        
+      
+      <script>
+          function changeColor(element) {
+          element.classList.toggle("clicked");
+          }
+    
+      </script>
+        <!--footer end-->
+      </footer>
+      <!--sitemap end-->
+  </section>
+
+    <!--js for toggle menu-->
+    <script>
+        var navLinks = document.getElementById("nav-links");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <!--js for toggle menu end-->
+
+</body>
+</html>

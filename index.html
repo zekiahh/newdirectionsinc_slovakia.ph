@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Directions Inc.</title>
+    <link rel="icon" href="img/logo4.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!--top button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">SERVICES</i></a>
+                        <div class="dropdown-content">
+                            <a href="services.html">Services</a>
+                            <a href="metro-rail.html">Portfolio</a>
+                            <a href="comments.html">Reviews</a>
+                        </div>
+                    </li>                    
+                    <li><a href="contactinfo.html">CONTACTS</a></li>
+                    <li><a href="meet.html">THE TEAM</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    
+        <div class="text-box">
+            <h1>New Directions, Inc.</h1>
+            <p>Are you ready to take your marketing efforts to a whole other level and maximize the potential of your marketing performance?</p>
+            <a href="#scroll-down" class="hero-btn">Learn More!</a>
+        </div>
+    </section>    
+    
+    <a id="scroll-down"></a>
+     <!--contact content-->
+     <section class="about">
+        <div class="row">
+            <div class="about-col">
+                <h1>About Us</h1>
+                <p>New Directions Inc. will take your marketing efforts to a whole other level with innovative communication tools and the dynamic fusion of traditional and non-traditional vehicles that will maximize the potential of your marketing performance. <br/><br/>
+                
+                The agency is committed to intelligent, proactive, and prompt servicing; and the continuing pursuit and application of out-of-the-box creative approaches aimed at realizing clients' marketing objectives.
+                </p>
+            </div>
+            <div class="about-col">
+                <img src="img/logo3.png" alt="employees">
+            </div>
+        </div>
+    </section>
+    <br />
+    <br />
+    <!--contact content end-->
+    <!--services-->
+    <section class="about2">
+        <div class="about2-col">
+            <h1>What we do</h1>
+            <p>New Directions Inc. offer clients a dynamic partnership rooted in the intelligent fusion of traditional communications vehicles and the skillful applications of digital and social media formats.</p>
+        </div>
+        <div class="about2-col">
+            <img src="img/placeholder2.png" alt="prod" usemap="#image-map">
+            <map name="image-map">
+                <area target="_self" alt="smstore" title="smstore" href="sm-dept.html" coords="100,110,200,300" shape="rect">
+                <area target="_self" alt="metro" title="metro" href="metro-rail.html" coords="180,320,370,420" shape="rect">
+                <area target="_self" alt="services" title="services" href="services.html" coords="210,100,360,210" shape="rect">
+                <area target="_self" alt="smappliances" title="smappliances" href="sm-app.html" coords="800,100,1100,180" shape="rect">
+                <area target="_self" alt="s&r" title="s&r" href="snr.html" coords="890,200,1150,300" shape="rect">
+                <area target="_self" alt="toykingdom" title="toykingdom" href="toyking.html" coords="800,310,1100,430" shape="rect">
+            </map>
+    </section>
+    <!--services end-->
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <!--call to action-->
+    <section class="cta">
+        <h1>Need assistance with your marketing efforts?</h1>
+        <a href="contactinfo.html" class="hero-btn">CONTACT US</a>
+    </section>
+    <!--call to action end-->
+    <br/>
+    <br/>
+    <br/>
+    <section>
+        <!--sitemap-->
+        <footer class="sitemap">
+          <div class="container2">
+              <div class="row2">
+                  <div class="sitemap-col">
+                      <br/>
+                      <br/>
+                      <h4>New Directions, Inc.</h4>
+                      <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="services.html">Services</a></li>
+                          <li><a href="metro-rail.html">Portfolio</a></li>
+                      </ul>
+                      <br/><br/><br/>
+                  </div>
+                  <div class="sitemap-col">
+                      <br/>
+                      <br/>
+                      <h4>Sitemap</h4>
+                      <ul>
+                          <li><a href="comments.html">Review</a></li>
+                          <li><a href="contactinfo.html">Contacts</a></li>
+                          <li><a href="meet.html">The Team</a></li>
+                      </ul>
+                  </div>
+                  <div class="sitemap-col">
+                      <br/>
+                      <br/>
+                      <h4>Slovakia</h4>
+                      <ul>
+                          <li>Harun, Trisha</li>
+                          <li>Lumabi, Edelle</li>
+                          <li>Pasamonte, Myrr</li>
+                          <li>Villosa, Emmanuel</li>
+                          <li>Violenta, Erielson</li>
+                      </ul>
+                  </div>
+                  <div class="sitemap-col">
+                      <br/>
+                      <br/>
+                      <h4>Contact us</h4>
+                      <ul>
+                          <li>new_d_inc@yahoo.com</li>
+                          <li>(02) 851 6471 or (02) 853 0962</li>
+                      </ul>
+                  </div>
+                  
+                  <br/>
+              </div>
+          </div>
+          <!--footer-->
+      <section class="footer">
+          <h4></h4>
+          <p>You may also contact us via our Social Media platforms!</p>
+          <div class="icons">
+              <img src="img/handshake.png" alt="handshake.png" class="icon-image">
+              <a href="https://www.facebook.com/new.d.inc/" target="_blank" onclick="changeColor(this)"><i class="fa fa-facebook" id="facebook-icon"></i></a>
+              <a href="https://www.linkedin.com/company/newdinc/" target="_blank" onclick="changeColor(this)"><i class="fa fa-linkedin" id="linkedin-icon"></i></a>
+              <img src="img/handshake.png" alt="handshake.png" class="icon-image">
+          </div>
+      </section>        
+      
+      <script>
+          function changeColor(element) {
+          element.classList.toggle("clicked");
+          }
+    
+      </script>
+        <!--footer end-->
+      </footer>
+      <!--sitemap end-->
+  </section>
+
+    <!--js for toggle menu-->
+    <script>
+        var navLinks = document.getElementById("nav-links");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <!--js for toggle menu end-->
+</body>
+</html>
