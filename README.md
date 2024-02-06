@@ -1,0 +1,1 @@
+# newdirectionsinc_slovakia.ph
